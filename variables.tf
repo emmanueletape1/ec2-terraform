@@ -55,3 +55,6 @@ variable "prefix" {
     error_message = "The server name prefix value must be a valid value, starting with \"mot\"."
   }
 }
+
+variable "secret_key" {}
+variable "access_key" {}
