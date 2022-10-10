@@ -3,8 +3,9 @@ variable "application" {
   # default     = "sql"
   validation {
     condition = contains(["aad","adc","alx","ams","ano","apd","app","ars","arw","asa","asp","asr","awd","bit","bkp","bwa","bzt","cap","cfm","chm","clc","clp","clr","crm","ctm","ctv","ctx","cxa","cxd","dbs","dbt","dhc","dir","dlk","ds2","dsp","dwr","eco","elk","env","epc","epe","erw","esx","esy","exs","fil","ftp","ftr","fus","gld","hyb","imo","inc","ing","ins","int","iox","ipc","ipw","irl","ise","kbc","key","kms","kvm","lbr","ldr","ldi","les","lhd","lhm","lic","lkd","map","mdm","mid","mtd","mwk","nmm","ods","oem","pac","pan","pck","pg7","pgn","pif","pii","pip","pki","poc","prt","prm","prx","psc","qls","qrd","rac","rad","raf","raq","ras","raw","rda","rkr","rmp","rms","rin","rpx","rtm","s4b","san","scd","scg","scj","sdv","sea","sec","sep","seq","sfl","sfs","sgs","shp","sia","skl","skm","slp","smi","sms","smt","sp3","spa","spc","spd","spe","spl","spm","spi","spo","spp","spr","sqa","sqe","sql","srm","sts","t4d","tax","tda","tdg","tfs","tkr","tmp","tos","tpc","tph","tsm","tpv","twl","udl","utl","vcn","vct","vms","vsm","wap","wdp","web","zcl"], var.application)
+    error_message = "The value entered for application is not found."
   }
-  error_message = "The value entered for application is not found."
+  
 }
 
 variable "env" {
